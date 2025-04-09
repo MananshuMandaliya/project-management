@@ -63,7 +63,7 @@ const Sidebar = () => {
         </div>
         {/* Team */}
         <div className="flex items-center gap-5 border-gray-200 border-y-[1.5] px-8 py-4 dark:border-gray-700">
-          <Image src="/logo.png" alt="Logo" width={40} height={40} />
+          <Image src="https://pm-s3-images-myver.s3.ap-south-1.amazonaws.com/logo.png" alt="Logo" width={40} height={40} />
           <div>
             <h3 className="text-md font-bold tracking-wide dark:text-gray-200">
               MANANSHU
@@ -152,7 +152,7 @@ const Sidebar = () => {
 };
 
 interface SidebarLinkProps {
-  href: String;
+  href: string;
   icon: LucideIcon;
   label: string;
 }

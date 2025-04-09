@@ -15,7 +15,7 @@ const TaskCard = ({ task }: Props) => {
           <strong>Attachments:</strong>
           <div className="flex flex-wrap">
             <Image
-              src={`/${task.attachments[0].fileUrl}`}
+              src={`https://pm-s3-images-myver.s3.ap-south-1.amazonaws.com/${task.attachments[0].fileUrl}`}
               alt={task.attachments[0].fileName}
               width={400}
               height={200}
@@ -53,11 +53,11 @@ const TaskCard = ({ task }: Props) => {
       </p>
       <p>
         <strong>Author:</strong>{" "}
-        {task.author ? task.author.userName : "Unknown"}
+        {task.author ? task.author.username : "Unknown"}
       </p>
       <p>
         <strong>Assignee:</strong>{" "}
-        {task.assignee ? task.assignee.userName : "Not assigned"}
+        {task.assignee ? task.assignee.username : "Not assigned"}
       </p>
     </div>
   );
